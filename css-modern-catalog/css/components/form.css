@@ -1,0 +1,39 @@
+/* Subgrid: підпис, поле й підказка кожного поля вирівнюються по спільних рядках */
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: var(--space-4);
+  row-gap: var(--space-1);
+
+  .form__field {
+    display: grid;
+    grid-row: span 3;
+    grid-template-rows: subgrid;
+    padding-bottom: var(--space-3);
+
+    &.form__field--wide { grid-column: 1 / -1; grid-row: span 2; }
+  }
+
+  .form__label { font-size: .75rem; font-weight: 500; align-self: end; margin-bottom: var(--space-1); }
+  .form__hint { font-size: .6875rem; color: var(--muted); margin-top: var(--space-1); }
+
+  .form__control {
+    width: 100%; padding: .65rem var(--space-3);
+    font-size: var(--fs-sm);
+    background: var(--bg); border: 1px solid var(--line); border-radius: var(--radius);
+    transition: border-color var(--ease), background var(--ease);
+
+    &::placeholder { color: #94a3b8; }
+    &:focus { border-color: var(--blue); background: var(--surface); outline: none; box-shadow: 0 0 0 3px color-mix(in srgb, var(--blue) 18%, transparent); }
+    &:user-invalid { border-color: #dc2626; }
+  }
+  textarea.form__control { resize: vertical; min-height: 8rem; }
+
+  .form__consent { grid-column: 1 / -1; font-size: .6875rem; color: var(--muted); margin: var(--space-2) 0 var(--space-3); }
+  .form__submit { grid-column: 1 / -1; }
+}
+
+@media (max-width: 40rem) {
+  .form { grid-template-columns: 1fr; }
+  .form .form__field.form__field--wide { grid-column: auto; }
+}
