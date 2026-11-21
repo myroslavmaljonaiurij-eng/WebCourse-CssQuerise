@@ -1,0 +1,30 @@
+body {
+  font-family: var(--font);
+  font-size: var(--fs-base);
+  color: var(--ink);
+  background: var(--bg);
+}
+
+h1, h2, h3 { line-height: 1.1; letter-spacing: -.02em; text-wrap: balance; }
+h1 { font-size: var(--fs-h1); font-weight: 600; }
+h2 { font-size: var(--fs-h2); font-weight: 600; }
+h3 { font-size: var(--fs-h3); font-weight: 600; }
+p { text-wrap: pretty; max-inline-size: 65ch; }
+
+.eyebrow {
+  font-size: .6875rem;
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--blue);
+}
+
+/* Nesting: посилання зі стрілкою */
+.link {
+  font-size: var(--fs-sm);
+  font-weight: 500;
+  color: var(--blue);
+
+  &::after { content: " \2192"; transition: margin var(--ease); }
+  &:hover { text-decoration: underline; &::after { margin-inline-start: 2px; } }
+}
