@@ -1,0 +1,57 @@
+/* Картка адаптується до ширини КОНТЕЙНЕРА (li у .grid-cards), а не вікна */
+.card {
+  display: grid; gap: var(--space-3);
+  grid-template-columns: 1fr;
+  background: transparent;
+
+  .card__media {
+    position: relative; display: block; overflow: hidden;
+    aspect-ratio: 1; background: var(--media-bg); border-radius: var(--radius);
+
+    img { width: 100%; height: 100%; object-fit: cover; transition: scale .4s ease; }
+    .badge { position: absolute; top: var(--space-2); left: var(--space-2); }
+  }
+  &:hover .card__media img { scale: 1.04; }
+
+  .card__body { display: grid; gap: var(--space-1); align-content: start; }
+  .card__cat { font-size: .6875rem; color: var(--muted); }
+  .card__title { font-size: var(--fs-base); a:hover { color: var(--blue); } }
+  .card__desc { font-size: var(--fs-sm); color: var(--muted); }
+  .card__price { font-weight: 600; }
+  .card__rating { font-size: .75rem; color: var(--muted); span[aria-hidden] { color: var(--ink); } }
+  .card__link { font-size: .75rem; color: var(--blue); &:hover { text-decoration: underline; } }
+
+  /* Варіант для каталогу: назва + ціна в одному рядку */
+  &.card--catalog .card__body {
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+      "title  price"
+      "desc   link"
+      "rating rating";
+    column-gap: var(--space-3);
+
+    .card__title  { grid-area: title; }
+    .card__price  { grid-area: price; }
+    .card__desc   { grid-area: desc; }
+    .card__link   { grid-area: link; justify-self: end; }
+    .card__rating { grid-area: rating; margin-top: var(--space-1); }
+  }
+}
+
+/* Container Queries: вузька картка — вертикальна, широка — горизонтальна */
+@container card (min-width: 28rem) {
+  .card {
+    grid-template-columns: minmax(8rem, 40%) 1fr;
+    align-items: center; gap: var(--space-4);
+
+    .card__title { font-size: var(--fs-lg); }
+    .card__price { font-size: var(--fs-lg); }
+  }
+}
+
+@container card (max-width: 13rem) {
+  .card {
+    .card__desc, .card__rating { display: none; }
+    .card__title { font-size: var(--fs-sm); }
+  }
+}
