@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sonic Pro — Techno Stan</title>
+  <meta name="description" content="Immersive sound. A little more quiet. Wireless noise-cancelling headphones with up to 40 hours of battery life.">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/products.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body class="page page--product">
+
+  <p class="announce">
+    <span>Good tech. Better everyday.</span>
+    <span>Free shipping on orders $75+</span>
+  </p>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html">Techno Stan<span class="logo__dot" aria-hidden="true"></span></a>
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="index.html">Main</a></li>
+          <li><a class="nav__link" href="catalog.html">Catalog</a></li>
+          <li><a class="nav__link" href="product.html" aria-current="page">Product</a></li>
+          <li><a class="nav__link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <form class="search" role="search">
+        <label class="visually-hidden" for="search">Search products</label>
+        <input class="search__input" id="search" type="search" placeholder="Search products">
+      </form>
+      <div class="header__actions">
+        <a class="icon-btn" href="#" aria-label="Account">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/></svg>
+        </a>
+        <a class="icon-btn" href="#" aria-label="Bag, 0 items">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8a3 3 0 016 0"/></svg>
+          <span class="icon-btn__label">Bag (0)</span>
+        </a>
+        <button class="icon-btn menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+<main>
+
+  <div class="container">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="catalog.html">Catalog</a></li>
+        <li><a href="catalog.html" data-p="crumb-cat">Audio</a></li>
+        <li aria-current="page" data-p="crumb-name">Sonic Pro</li>
+      </ol>
+    </nav>
+
+    <section class="product" aria-labelledby="product-title">
+      <div class="product__gallery">
+        <figure class="product__image">
+          <img data-p="image" src="assets/images/sonic-pro.jpg" alt="Sonic Pro headphones" width="720" height="720">
+        </figure>
+        <dl class="specs" data-p="specs">
+          <div class="specs__item">
+            <dt>Battery life</dt>
+            <dd>40 hours</dd>
+          </div>
+          <div class="specs__item">
+            <dt>Less noise, more focus</dt>
+            <dd>Adaptive ANC</dd>
+          </div>
+          <div class="specs__item">
+            <dt>Effortlessly connected</dt>
+            <dd>Bluetooth 5.3</dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="product__info">
+        <p class="eyebrow" data-p="eyebrow">Sound, without distractions</p>
+        <h1 class="product__title" id="product-title" data-p="title">Sonic Pro</h1>
+        <p class="product__sub" data-p="sub">Wireless noise-cancelling headphones</p>
+        <p class="product__rating" data-p="rating"><span aria-hidden="true">★★★★★</span> 4.9 · 128 reviews</p>
+        <p class="product__price" data-p="price">$249</p>
+        <p class="product__desc" data-p="desc">Immersive sound. A little more quiet. Meet your everyday escape, from the
+          first track to the last call.</p>
+
+        <form class="buy" action="#">
+          <fieldset class="buy__color">
+            <legend>Color: <strong data-p="color-name">Midnight</strong></legend>
+            <div class="buy__swatches" data-p="swatches">
+              <label class="swatch">
+                <input type="radio" name="color" value="Midnight" checked>
+                <span class="swatch__dot" style="--swatch:#1b2a4a"></span>
+                <span class="visually-hidden">Midnight</span>
+              </label>
+            </div>
+            <p class="buy__stock">In stock. Ready to ship.</p>
+          </fieldset>
+
+          <div class="buy__row">
+            <div class="qty">
+              <button type="button" class="qty__btn" aria-label="Decrease quantity">−</button>
+              <output class="qty__value">1</output>
+              <button type="button" class="qty__btn" aria-label="Increase quantity">+</button>
+            </div>
+            <button class="btn btn--primary btn--block" type="submit" data-p="buy-label">Add to bag — $249</button>
+          </div>
+
+          <p class="buy__meta">Free shipping · 30-day returns · 2-year warranty</p>
+          <a class="link" href="contact.html">Need help choosing? Talk to a real person</a>
+        </form>
+      </div>
+    </section>
+  </div>
+
+  <section class="section section--tinted details">
+    <div class="container">
+      <h2 class="section__title">The details make the difference.</h2>
+      <ul class="notes" data-p="notes">
+        <li class="note">
+          <h3 class="note__title">You feel every note</h3>
+          <p>Precision-tuned 40 mm drivers deliver rich lows and crisp, detailed highs.</p>
+        </li>
+        <li class="note">
+          <h3 class="note__title">You find your focus</h3>
+          <p>Adaptive noise cancellation helps you tune in and switch off.</p>
+        </li>
+        <li class="note">
+          <h3 class="note__title">You go all day</h3>
+          <p>Up to 40 hours of listening. A quick 10-minute charge gives 5 more.</p>
+        </li>
+      </ul>
+      <p class="details__box"><strong>In the box:</strong> <span data-p="box">Sonic Pro headphones, travel case, USB-C
+          charging cable, 3.5 mm audio cable.</span></p>
+    </div>
+  </section>
+
+  <section class="section related">
+    <div class="container">
+      <header class="section__head">
+        <h2 class="section__title">Good together.</h2>
+        <a class="link" href="catalog.html">Explore the catalog</a>
+      </header>
+      <ul class="grid-cards grid-cards--related" data-p="related"></ul>
+    </div>
+  </section>
+
+</main>
+
+  <section class="newsletter">
+    <div class="container newsletter__inner">
+      <div>
+        <h2 class="newsletter__title">Your next upgrade starts here.</h2>
+        <p class="newsletter__text">New arrivals, useful ideas, and offers worth opening.</p>
+      </div>
+      <form class="newsletter__form">
+        <label class="visually-hidden" for="nl-email">Email address</label>
+        <input id="nl-email" type="email" placeholder="Enter your email address" required>
+        <button class="btn btn--dark" type="submit">Sign me up</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a class="logo logo--light" href="index.html">Techno Stan</a>
+        <p>Thoughtfully selected tech.<br>Made for the life you live.</p>
+      </div>
+      <nav class="footer__col" aria-label="Shop">
+        <h2 class="footer__title">Shop</h2>
+        <ul><li><a href="catalog.html">Audio</a></li><li><a href="catalog.html">Computing</a></li><li><a href="catalog.html">Wearables</a></li><li><a href="catalog.html">Accessories</a></li></ul>
+      </nav>
+      <nav class="footer__col" aria-label="Support">
+        <h2 class="footer__title">Support</h2>
+        <ul><li><a href="contact.html">Contact us</a></li><li><a href="contact.html">Shipping</a></li><li><a href="contact.html">Returns</a></li><li><a href="contact.html">Warranty</a></li></ul>
+      </nav>
+      <div class="footer__col">
+        <h2 class="footer__title">Stay connected</h2>
+        <ul><li><a href="#">Instagram</a></li><li><a href="#">YouTube</a></li><li><a href="mailto:hello@technostan.shop">hello@technostan.shop</a></li></ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© 2026 Techno Stan. All rights reserved.</p>
+      <ul>
+        <li><a href="#">Privacy policy</a></li><li><a href="#">Terms of service</a></li><li>US / USD</li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>
