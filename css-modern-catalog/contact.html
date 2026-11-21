@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Techno Stan</title>
+  <meta name="description" content="A question, a little advice, or just a hello. We're all ears.">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body class="page page--contact">
+
+  <p class="announce">
+    <span>Good tech. Better everyday.</span>
+    <span>Free shipping on orders $75+</span>
+  </p>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html">Techno Stan<span class="logo__dot" aria-hidden="true"></span></a>
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="index.html">Main</a></li>
+          <li><a class="nav__link" href="catalog.html">Catalog</a></li>
+          <li><a class="nav__link" href="product.html">Product</a></li>
+          <li><a class="nav__link" href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+      <form class="search" role="search">
+        <label class="visually-hidden" for="search">Search products</label>
+        <input class="search__input" id="search" type="search" placeholder="Search products">
+      </form>
+      <div class="header__actions">
+        <a class="icon-btn" href="#" aria-label="Account">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/></svg>
+        </a>
+        <a class="icon-btn" href="#" aria-label="Bag, 0 items">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8a3 3 0 016 0"/></svg>
+          <span class="icon-btn__label">Bag (0)</span>
+        </a>
+        <button class="icon-btn menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="index.html">Home</a></li>
+        <li aria-current="page">Contact</li>
+      </ol>
+    </nav>
+
+    <header class="page-head">
+      <h1 class="page-head__title">Real people. Ready to help.</h1>
+      <p class="page-head__text">A question, a little advice, or just a hello. We're all ears.</p>
+    </header>
+
+    <div class="contact">
+
+      <!-- Form: fields are aligned with Subgrid -->
+      <section class="contact__form" aria-labelledby="form-title">
+        <h2 class="contact__title" id="form-title">Send us a message</h2>
+        <p class="contact__lead">We usually get back to you within one business day.</p>
+
+        <form class="form" action="#" method="post">
+          <div class="form__field">
+            <label class="form__label" for="name">Full name *</label>
+            <input class="form__control" id="name" name="name" type="text" placeholder="Your name" autocomplete="name" required>
+            <p class="form__hint">As it appears on your order.</p>
+          </div>
+
+          <div class="form__field">
+            <label class="form__label" for="email">Email address *</label>
+            <input class="form__control" id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+            <p class="form__hint">We'll only use it to reply.</p>
+          </div>
+
+          <div class="form__field form__field--wide">
+            <label class="form__label" for="topic">What can we help with? *</label>
+            <select class="form__control" id="topic" name="topic" required>
+              <option value="" selected disabled>Select a topic</option>
+              <option>Order status</option>
+              <option>Returns and exchanges</option>
+              <option>Product advice</option>
+              <option>Warranty and repairs</option>
+              <option>Something else</option>
+            </select>
+          </div>
+
+          <div class="form__field form__field--wide">
+            <label class="form__label" for="message">Message *</label>
+            <textarea class="form__control" id="message" name="message" rows="5" placeholder="Tell us a little more…" required></textarea>
+          </div>
+
+          <p class="form__consent">By sending, you agree to our privacy policy.</p>
+          <button class="btn btn--primary btn--block form__submit" type="submit">Send message</button>
+        </form>
+      </section>
+
+      <!-- Contact details -->
+      <aside class="contact__aside" aria-labelledby="help-title">
+        <h2 class="contact__aside-title" id="help-title">A little help goes a long way.</h2>
+        <p>We know our tech. And we're here to help you find yours.</p>
+
+        <dl class="contact__list">
+          <div>
+            <dt>Email us</dt>
+            <dd><a href="mailto:hello@technostan.shop">hello@technostan.shop</a><span>For orders, product advice, and everything else.</span></dd>
+          </div>
+          <div>
+            <dt>Give us a call</dt>
+            <dd><a href="tel:+14155550142">+1 (415) 555-0142</a><span>Monday–Friday, 9am–6pm PT</span></dd>
+          </div>
+        </dl>
+
+        <div class="contact__order">
+          <h3>Already placed an order?</h3>
+          <p>Include your order number so we can get things moving a little faster.</p>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Quick answers -->
+    <section class="faq" aria-labelledby="faq-title">
+      <h2 class="section__title" id="faq-title">A few quick answers.</h2>
+      <ul class="faq__list">
+        <li class="faq__item">
+          <h3 class="faq__q">Where's my order?</h3>
+          <p>Your shipping email has a tracking link. Standard delivery takes 3–5 business days.</p>
+          <a class="link" href="#">Learn more</a>
+        </li>
+        <li class="faq__item">
+          <h3 class="faq__q">Not quite the right fit?</h3>
+          <p>Return your purchase within 30 days. We'll help you get it sorted.</p>
+          <a class="link" href="#">Learn more</a>
+        </li>
+        <li class="faq__item">
+          <h3 class="faq__q">Something not working?</h3>
+          <p>Every product includes a 2-year warranty. Get in touch and we'll take it from there.</p>
+          <a class="link" href="#">Learn more</a>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a class="logo logo--light" href="index.html">Techno Stan</a>
+        <p>Thoughtfully selected tech.<br>Made for the life you live.</p>
+      </div>
+      <nav class="footer__col" aria-label="Shop">
+        <h2 class="footer__title">Shop</h2>
+        <ul><li><a href="catalog.html">Audio</a></li><li><a href="catalog.html">Computing</a></li><li><a href="catalog.html">Wearables</a></li><li><a href="catalog.html">Accessories</a></li></ul>
+      </nav>
+      <nav class="footer__col" aria-label="Support">
+        <h2 class="footer__title">Support</h2>
+        <ul><li><a href="contact.html">Contact us</a></li><li><a href="contact.html">Shipping</a></li><li><a href="contact.html">Returns</a></li><li><a href="contact.html">Warranty</a></li></ul>
+      </nav>
+      <div class="footer__col">
+        <h2 class="footer__title">Stay connected</h2>
+        <ul><li><a href="#">Instagram</a></li><li><a href="#">YouTube</a></li><li><a href="mailto:hello@technostan.shop">hello@technostan.shop</a></li></ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© 2026 Techno Stan. All rights reserved.</p>
+      <ul>
+        <li><a href="#">Privacy policy</a></li><li><a href="#">Terms of service</a></li><li>US / USD</li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>
