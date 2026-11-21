@@ -1,0 +1,39 @@
+:root {
+  /* Кольори */
+  --blue: #2563eb;
+  --blue-dark: #1d4ed8;
+  --navy: #0f172a;
+  --navy-2: #1e293b;
+  --ink: #0f172a;
+  --muted: #64748b;
+  --line: #e2e8f0;
+  --bg: #f8fafc;
+  --surface: #ffffff;
+  --media-bg: #cfdbe6;
+
+  /* Відступи */
+  --space-1: .25rem;
+  --space-2: .5rem;
+  --space-3: .75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 5rem;
+
+  /* Типографіка */
+  --font: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --fs-sm: .8125rem;
+  --fs-base: .9375rem;
+  --fs-lg: 1.125rem;
+  --fs-h3: clamp(1rem, .9rem + .4vw, 1.25rem);
+  --fs-h2: clamp(1.5rem, 1.2rem + 1.2vw, 2rem);
+  --fs-h1: clamp(2.25rem, 1.4rem + 3.6vw, 4rem);
+
+  /* Інше */
+  --radius: .25rem;
+  --radius-lg: .5rem;
+  --container: 75rem;
+  --gutter: clamp(1rem, 4vw, 2.5rem);
+  --ease: .2s ease;
+}
